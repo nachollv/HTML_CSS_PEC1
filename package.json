@@ -1,0 +1,29 @@
+{
+  "name": "biografia_Julio_Verne",
+  "version": "1.0.0",
+  "description": "PEC1. un pequeño portal biográfico",
+  "source": "src/index.html",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.3.2",
+    "rimraf": "^3.0.2"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel",
+    "parcel:build": "parcel build",
+    "clean": "rimraf dist .parcel-cache"
+  },
+  "keywords": [
+    "bundler",
+    "parcel"
+  ],
+  "author": "Ignacio Lladó Vidal",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "gh": "^2.8.9"
+  }
+}
