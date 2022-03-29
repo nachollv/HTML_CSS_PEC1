@@ -1,67 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex Brush:wght@300;700&display=swap');
 
-*{
-    box-sizing: border-box;
-    font-size: 10px;
-    font-family:Kreon, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  border: 0;
+  vertical-align: baseline;
+}
+
+html {
+  font-family:'Alex Brush', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  box-sizing: border-box; /* para obligar al navegador que use el modelo de cajas alternativo donde, al ancho y al alto de la caja NO hay que sumar padding, margin, border*/
 }
 
 body {
+  width: 100%;
   display: grid;
   grid-template-areas:
     'header header header'
     'main main main '
     'footer footer footer';
   gap: 2rem;
-  padding: 1rem;
+ 
   color: #1f1f1f;
-  background: linear-gradient(to bottom, #c0bfa0, #f3edbd);
+  font-size: 10px;
 }
 
 header { 
   grid-area: header; 
   text-align: center;
 }
-article { grid-area: main; }
+
+article { 
+  grid-area: main; 
+}
+article figure {
+  text-align: center;
+}
+article figcaption {
+  font-size: 1.25rem;
+}
+article p {
+  margin: 4rem;
+  font-size: 2rem;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.categories {
+  display: grid;
+  grid-template-areas: 'portrait contens-list';
+  gap: 2rem;
+}
+ #portrait {
+  grid-area: portrait;
+}
+#contens-list {
+  grid-area: contens-list;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
 footer { 
   grid-area: footer; 
   font-size: 2rem;
   text-align: center;
+  padding-top: 3rem;
+  display: grid;
+  grid-template-areas: 'f-left f-middle f-right';
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  margin-top:8rem;
+  height: 9rem;
+  margin-bottom: 1rem;
+}
+footer .footer-left {
+  grid-area: f-left
+}
+footer .footer-middle {
+  grid-area: f-middle;
+}
+footer .footer-right {
+  grid-area: f-right;
 }
 
  /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {body {
-  background-color: rgb(240, 100, 6);
+ @media only screen and (max-width: 600px) {
+   body {
+  background: linear-gradient(to bottom, #c0bfa0, rgb(240, 100, 6));
   font-size: 2rem;
-}}
+}
+footer {
+  grid-template-areas: 'f-left'
+                        'f-middle'
+                        'f-right';
+  height: 100%;
+}
+}
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {body {
-  background-color: rgb(44, 223, 20);
+ @media only screen and (min-width: 600px) {
+   body {
+  background: linear-gradient(to bottom, #c0bfa0, rgb(44, 223, 20));
   font-size: 2.5rem;
-
-}}
+}
+footer {
+  grid-template-areas: 'f-left'
+                        'f-middle'
+                        'f-right';
+  height: 100%;
+}
+}
  
  /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {body {
-  background-color: rgb(61, 15, 228);
+ @media only screen and (min-width: 768px) {
+   body {
+  background: linear-gradient(to bottom, #c0bfa0, rgb(61, 15, 228));
   font-size: 3rem;
+}
 
-}}
+}
  
  /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {body {
-  background-color: rgb(96, 97, 97);
+ @media only screen and (min-width: 992px) {
+   body {
+  background: linear-gradient(to bottom, #c0bfa0, rgb(96, 97, 97));
   font-size: 3.5rem;
-
-}}
+}
+footer {
+  grid-template-areas: 'f-left f-middle f-right';
+  height: 100%;
+}
+}
  
  /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {body {
-  background-color: rgb(230, 173, 211);
+ @media only screen and (min-width: 1200px) {
+   body {
+  background: linear-gradient(to bottom, #c0bfa0, #ef9e4d);
   font-size: 4rem;
-
-}} 
+}
+footer {
+  grid-template-areas: 'f-left f-middle f-right';
+  height: 100%;
+}
+} 
 
 h1 {
     font-size: 4rem;
@@ -93,7 +178,4 @@ a:hover {
   color: #fff;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
-}
-ol {
-  font-size: 1rem;
 }
