@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alex Brush:wght@300;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@
 }
 
 html {
-  font-family:'Alex Brush', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Arvo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(0, 0, 0);
   font-size: 10px;
   box-sizing: border-box; /* para obligar al navegador que use el modelo de cajas alternativo donde, al ancho y al alto de la caja NO hay que sumar padding, margin, border*/
@@ -48,6 +47,8 @@ article p {
 }
 .responsive {
   width: 100%;
+  max-width: 1024px;
+  min-width: 404px;
   height: auto;
 }
 
@@ -56,6 +57,13 @@ article p {
   grid-template-areas: 'portrait contens-list';
   gap: 2rem;
 }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
  #portrait {
   grid-area: portrait;
 }
@@ -90,7 +98,7 @@ footer .footer-right {
  /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
    body {
-  background: linear-gradient(to bottom, #c0bfa0, rgb(240, 100, 6));
+  background: linear-gradient(to bottom, #c0bfa0, #f6ebcb);
   font-size: 2rem;
 }
 footer {
@@ -104,7 +112,7 @@ footer {
  /* Small devices (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 600px) {
    body {
-  background: linear-gradient(to bottom, #c0bfa0, rgb(44, 223, 20));
+  background: linear-gradient(to bottom, #c0bfa0, #c4c3a5);
   font-size: 2.5rem;
 }
 footer {
@@ -118,7 +126,7 @@ footer {
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {
    body {
-  background: linear-gradient(to bottom, #c0bfa0, rgb(61, 15, 228));
+  background: linear-gradient(to bottom, #c0bfa0, #f5a355);
   font-size: 3rem;
 }
 
@@ -139,7 +147,7 @@ footer {
  /* Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (min-width: 1200px) {
    body {
-  background: linear-gradient(to bottom, #c0bfa0, #ef9e4d);
+  background: linear-gradient(to bottom, #c0bfa0, #dcf4f7);
   font-size: 4rem;
 }
 footer {
@@ -170,12 +178,41 @@ article p {
 }
 
 a {
-  text-decoration: none;
-  transition: transform 1s;
+  text-decoration-thickness: 4px;
+  text-decoration-color: white;
 }
-a:hover {
+a:visited{
+  color: #fab804;
+}
+ol {
+  list-style-position: outside;
+  margin-left: 5rem;
+  padding: 2rem;
+  font-size: 2rem;
+  max-width: 80%;
+  border: #1f1f1f solid 1px;
+}
+ol li {
+  background: #f9e0aa;
+  color: darkred;
+  padding: 1rem;
+  margin-left: 35px;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 2em;
+}
+.hoverIn {
   background-color: #ffb47e;
   color: #fff;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+.hoverOut {
+  background-color: #fff;
+  color: #ffb47e;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
 }
