@@ -2,16 +2,17 @@ const name = "Herramientas HTML y CSS";
 console.log(`Bienvenido a la PEC 1 de ${name}`);
 
 
-const element = document.querySelector("#enlace");
+const elementList = document.querySelectorAll ("a");
+let elementsArr = Array.from(elementList);
 
-element.addEventListener("mouseover", event => {
+elementsArr.forEach(aElement => aElement.addEventListener("mouseover", event => {
   console.log("Mouse in");
-  element.classList.add("hoverIn");
-  element.classList.remove("hoverOut");
-});
+  aElement.classList.add("hoverIn");
+  aElement.classList.remove("hoverOut");
+}))
 
-element.addEventListener("mouseout", event => {
+elementsArr.forEach(aElement => aElement.addEventListener("mouseout", event => {
   console.log("Mouse out");
-  element.classList.add("hoverOut");
-  element.classList.remove("hoverIn");
-});
+  aElement.classList.add("hoverOut");
+  aElement.classList.remove("hoverIn");
+}))
