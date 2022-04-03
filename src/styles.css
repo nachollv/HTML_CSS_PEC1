@@ -179,10 +179,23 @@ article p {
 
 a {
   text-decoration-thickness: 4px;
-  text-decoration-color: white;
+  text-decoration-color: rgb(0, 0, 0);
 }
 a:visited{
   color: #fab804;
+}
+.hoverIn {
+  background-color: #ffb47e;
+  color: #fff!important;
+  text-decoration-color: #fff;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+.hoverOut {
+  background-color: #fff;
+  color: #000!important;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
 }
 ol {
   list-style-position: outside;
@@ -203,16 +216,4 @@ dt {
 }
 dd {
   margin-left: 2em;
-}
-.hoverIn {
-  background-color: #ffb47e;
-  color: #fff;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
-}
-.hoverOut {
-  background-color: #fff;
-  color: #ffb47e;
-  padding-left: 0.2rem;
-  padding-right: 0.2rem;
 }
