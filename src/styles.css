@@ -9,41 +9,45 @@
 
 html {
   font-family:'Arvo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(0, 0, 0);
   font-size: 10px;
   box-sizing: border-box; /* para obligar al navegador que use el modelo de cajas alternativo donde, al ancho y al alto de la caja NO hay que sumar padding, margin, border*/
+  max-width: 100%;
+  margin: auto;
 }
-
 body {
-  width: 100%;
+  /* width: 100%; */
   display: grid;
   grid-template-areas:
     'header header header'
     'main main main '
     'footer footer footer';
   gap: 2rem;
- 
-  color: #1f1f1f;
+  color: #000;
   font-size: 10px;
-}
 
+}
 header { 
   grid-area: header; 
   text-align: center;
 }
-
 article { 
-  grid-area: main; 
+  grid-area: main;
+  color: #a33125;
+  margin-top: 4rem;
 }
 article figure {
   text-align: center;
+  margin-bottom: 5rem;
 }
 article figcaption {
   font-size: 1.25rem;
 }
 article p {
-  margin: 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 4rem;
   font-size: 2rem;
+  text-align: left;
 }
 .responsive {
   width: 100%;
@@ -51,8 +55,7 @@ article p {
   min-width: 404px;
   height: auto;
 }
-
-.categories {
+.contens {
   display: grid;
   grid-template-areas: 'portrait contens-list';
   gap: 2rem;
@@ -61,29 +64,26 @@ article p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 75%;
 }
-
- #portrait {
+#contens-img {
   grid-area: portrait;
 }
-#contens-list {
+#contens-text {
   grid-area: contens-list;
-  font-size: 2rem;
-  margin-left: 2rem;
+  max-width: 95%;
+  margin: auto;
 }
 footer { 
-  grid-area: footer; 
+  grid-area: footer;
   font-size: 2rem;
   text-align: center;
-  padding-top: 3rem;
   display: grid;
   grid-template-areas: 'f-left f-middle f-right';
   background-color: #c0be9e;
   color: rgb(255, 255, 255);
-  margin-top:8rem;
-  height: 9rem;
-  margin-bottom: 1rem;
+  height: 9rem!important;
+  padding-top:4rem!important;
 }
 footer .footer-left {
   grid-area: f-left
@@ -94,95 +94,29 @@ footer .footer-middle {
 footer .footer-right {
   grid-area: f-right;
 }
-
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {
-   body {
-  background: linear-gradient(to bottom, #c0bfa0, #f6ebcb);
-  font-size: 2rem;
-}
-footer {
-  grid-template-areas: 'f-left'
-                        'f-middle'
-                        'f-right';
-  height: 100%;
-}
-}
-
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {
-   body {
-  background: linear-gradient(to bottom, #c0bfa0, #c4c3a5);
-  font-size: 2.5rem;
-}
-footer {
-  grid-template-areas: 'f-left'
-                        'f-middle'
-                        'f-right';
-  height: 100%;
-}
-}
- 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {
-   body {
-  background: linear-gradient(to bottom, #c0bfa0, #f5a355);
-  font-size: 3rem;
-}
-
-}
- 
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {
-   body {
-  background: linear-gradient(to bottom, #c0bfa0, rgb(96, 97, 97));
-  font-size: 3.5rem;
-}
-footer {
-  grid-template-areas: 'f-left f-middle f-right';
-  height: 100%;
-}
-}
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
-   body {
-  background: linear-gradient(to bottom, #c0bfa0, #dcf4f7);
-  font-size: 4rem;
-}
-footer {
-  grid-template-areas: 'f-left f-middle f-right';
-  height: 100%;
-}
-} 
-
 h1 {
     font-size: 4rem;
     color: #f3ab63;
     font-family: cursive;
   }
-
 h2 {
+  font-size: 3rem;
+  text-shadow: 0 0 3px #c8b080, 0 0 2px #ebc286;
+}
+h3 {
   font-size: 2rem;
   text-shadow: 0 0 3px #c8b080, 0 0 2px #ebc286;
 }
 
 figcaption {
   white-space: pre;
-  font-size: 1;
+  font-size: 1rem !important;
+  margin-top: .5rem;
 }
-
-article p {
-  font-size: 2rem;
-  text-align: left;
-}
-
 a {
+  color: #fab804;
   text-decoration-thickness: 4px;
   text-decoration-color: rgb(0, 0, 0);
-}
-a:visited{
-  color: #fab804;
 }
 .hoverIn {
   background-color: #ffb47e;
@@ -199,21 +133,85 @@ a:visited{
 }
 ol {
   list-style-position: outside;
-  margin-left: 5rem;
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* padding: 2rem; */
   font-size: 2rem;
-  max-width: 80%;
-  border: #1f1f1f solid 1px;
 }
 ol li {
-  background: #f9e0aa;
-  color: darkred;
+  background-color: #f9e0aa;
   padding: 1rem;
-  margin-left: 35px;
+  margin-bottom: 1rem;
+  border: #a33125 1px solid;
+  border-radius: 5px;
 }
 dt {
   font-weight: bold;
 }
 dd {
   margin-left: 2em;
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+  body {
+ background: linear-gradient(to bottom, #c0bfa0, #f6ebcb);
+ font-size: 2rem;
+}
+
+footer {
+ grid-template-areas: 'f-left'
+                       'f-middle'
+                       'f-right';
+ height: 100%;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  body {
+ background: linear-gradient(to bottom, #c0bfa0, #f5a355);
+ font-size: 3rem;
+}
+.categories {
+ grid-template-areas: 'portrait' 'contens-list';
+}
+ol {
+ padding: 2rem;
+ font-size: 2rem;
+
+}
+ol li {
+ background: #f9e0aa;
+ color: darkred;
+ padding: 1rem;
+ margin-left: 0!important;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  body {
+ background: linear-gradient(to bottom, #c0bfa0, rgb(96, 97, 97));
+ font-size: 3.5rem;
+}
+.categories {
+ grid-template-areas: 'portrait' 'contens-list';
+}
+footer {
+ grid-template-areas: 'f-left f-middle f-right';
+ height: 100%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+ background: linear-gradient(to bottom, #c0bfa0, #dcf4f7);
+ font-size: 4rem;
+}
+footer {
+ grid-template-areas: 'f-left f-middle f-right';
+ height: 100%;
+}
 }
