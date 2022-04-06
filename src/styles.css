@@ -49,23 +49,27 @@ article p {
   font-size: 2rem;
   text-align: left;
 }
-/* img {
+img {
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: bottom;
-} */
-.contens {
-  display: grid;
-  grid-template-areas: 'portrait contens-list';
-  gap: 2rem;
 }
-.center {
+.contens {
+/*   display: grid;
+  grid-template-areas: 'portrait contens-list';
+  gap: 2rem; */
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+/* .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 75%;
-}
+} */
 #contens-img {
   grid-area: portrait;
 }
@@ -152,7 +156,21 @@ dd {
 }
 
  /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 400px) {
+  body {
+ background: linear-gradient(to bottom, #faf205, #f6ebcb);
+ font-size: 2rem;
+}
+
+footer {
+ grid-template-areas: 'f-left'
+                       'f-middle'
+                       'f-right';
+ height: 100%;
+}
+}
+
+ @media only screen and (min-width: 600px) {
   body {
  background: linear-gradient(to bottom, #c0bfa0, #f6ebcb);
  font-size: 2rem;
@@ -167,7 +185,7 @@ footer {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   body {
  background: linear-gradient(to bottom, #c0bfa0, #f5a355);
  font-size: 3rem;
@@ -189,7 +207,7 @@ ol li {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+@media only screen and (minb-width: 992px) {
   body {
  background: linear-gradient(to bottom, #c0bfa0, rgb(96, 97, 97));
  font-size: 3.5rem;
