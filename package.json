@@ -24,6 +24,7 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.2",
-    "gh": "^2.8.9"
+    "gh": "^2.8.9",
+    "react-lazy-load-image-component": "^1.5.3"
   }
 }

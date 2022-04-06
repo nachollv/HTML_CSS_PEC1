@@ -49,12 +49,12 @@ article p {
   font-size: 2rem;
   text-align: left;
 }
-.responsive {
+/* img {
   width: 100%;
-  max-width: 1024px;
-  min-width: 404px;
   height: auto;
-}
+  object-fit: cover;
+  object-position: bottom;
+} */
 .contens {
   display: grid;
   grid-template-areas: 'portrait contens-list';
@@ -135,7 +135,6 @@ ol {
   list-style-position: outside;
   padding-left: 2rem;
   padding-right: 2rem;
-  /* padding: 2rem; */
   font-size: 2rem;
 }
 ol li {
@@ -195,12 +194,16 @@ ol li {
  background: linear-gradient(to bottom, #c0bfa0, rgb(96, 97, 97));
  font-size: 3.5rem;
 }
+.contens {
+  grid-template-areas: "portrait" "contens-list";
+}
 .categories {
  grid-template-areas: 'portrait' 'contens-list';
 }
 footer {
- grid-template-areas: 'f-left f-middle f-right';
+ grid-template-areas: "f-left" "f-middle" "f-right";
  height: 100%;
+ gap: 2rem;
 }
 }
 
