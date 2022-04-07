@@ -40,6 +40,10 @@ article p {
   margin-bottom: 4rem;
   text-align: left;
 }
+.relatedLinks{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 img {
   width: 100%;
   height: auto;
@@ -94,7 +98,8 @@ ol {
   /* font-size: 2rem; */
 }
 ol li {
-  background-color: #f9e0aa;
+  background-color: #e9e2d8;
+  color: black;
   padding: 1rem;
   margin-bottom: 1rem;
   border: #a33125 1px solid;
@@ -125,26 +130,20 @@ footer {
 }
 
 }
-
- @media only screen and (min-width: 600px) {
+*/
+ @media only screen and (max-width: 600px) {
 
   body {
  background: linear-gradient(to bottom, #f7f5ef, #f3eac9);
  font-size: 2rem;
 }
 
-.contens { grid-template-columns: repeat (1, 1fr);}
+article { grid-template-columns: repeat (1, 1fr);}
 
-footer {
- grid-template-areas: 'f-left'
-                       'f-middle'
-                       'f-right';
- height: 100%;
+footer { grid-template-columns: repeat (1, 1fr);}
 }
 
-}
-
-
+/*
 @media only screen and (min-width: 768px) {
 
   body {
