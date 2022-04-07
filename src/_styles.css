@@ -1,61 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-* {
+*, *:before, *:after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; 
   border: 0;
-  outline: 0;
-  font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
-}
-body {
-  font-size: 10px;
-  margin: 1rem;
 }
 
 html {
   font-family:'Arvo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
+  font-size: 10px;
   box-sizing: border-box; /* para obligar al navegador que use el modelo de cajas alternativo donde, al ancho y al alto de la caja NO hay que sumar padding, margin, border*/
+  max-width: 100%;
+  margin: auto;
 }
+body {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'main main main '
+    'footer footer footer';
+  gap: 2rem;
+  color: #000;
+  font-size: 10px;
 
+}
 header { 
+  grid-area: header; 
   text-align: center;
 }
 article { 
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-area: main;
   color: #a33125;
   margin-top: 4rem;
-  font-size: 1rem;
 }
-article figcaption {
-  font-size: .75rem;
+article figure {
   text-align: center;
   margin-bottom: 5rem;
 }
+article figcaption {
+  font-size: 1.25rem;
+}
 article p {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
   margin-bottom: 4rem;
+  font-size: 2rem;
   text-align: left;
 }
 img {
   width: 100%;
   height: auto;
+  object-fit: cover;
+  object-position: bottom;
+}
+.contens {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+#contens-img {
+  grid-area: portrait;
+}
+#contens-text {
+  grid-area: contens-list;
+  max-width: 95%;
+  margin: auto;
 }
 footer { 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  border: 1px solid #000;
-  text-align: center;
-  background-color: #c0be9e;
-  color: #ffffff;
-  padding:4rem;
+  grid-area: footer;
   font-size: 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-areas: 'f-left f-middle f-right';
+  background-color: #c0be9e;
+  color: rgb(255, 255, 255);
+  height: 9rem!important;
+  padding-top:4rem!important;
 }
-
+footer .footer-left {
+  grid-area: f-left
+}
+footer .footer-middle {
+  grid-area: f-middle;
+}
+footer .footer-right {
+  grid-area: f-right;
+}
 h1 {
     font-size: 4rem;
     color: #f3ab63;
@@ -68,6 +100,12 @@ h2 {
 h3 {
   font-size: 2rem;
   text-shadow: 0 0 3px #c8b080, 0 0 2px #ebc286;
+}
+
+figcaption {
+  white-space: pre;
+  font-size: 1rem !important;
+  margin-top: .5rem;
 }
 a {
   color: #fab804;
@@ -91,7 +129,7 @@ ol {
   list-style-position: outside;
   padding-left: 2rem;
   padding-right: 2rem;
-  /* font-size: 2rem; */
+  font-size: 2rem;
 }
 ol li {
   background-color: #f9e0aa;
@@ -107,7 +145,7 @@ dd {
   margin-left: 2em;
 }
 
-/*
+ /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 400px) {
 
   body {
@@ -125,7 +163,7 @@ footer {
 }
 
 }
-
+/* Extra small devices (phones, 600px and down) */
  @media only screen and (min-width: 600px) {
 
   body {
@@ -144,7 +182,7 @@ footer {
 
 }
 
-
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
   body {
@@ -175,7 +213,7 @@ ol li {
 
 }
 
-
+/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   body {
  background: linear-gradient(to bottom, #f7f5c8, #bab998);
@@ -191,7 +229,7 @@ footer {
 }
 }
 
-
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   body {
  background: linear-gradient(to bottom, #ffcea6, #fe9b4b);
@@ -202,4 +240,4 @@ footer {
  grid-template-areas: 'f-left f-middle f-right';
  height: 100%;
 }
-} */
+}
