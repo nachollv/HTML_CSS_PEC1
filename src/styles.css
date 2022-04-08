@@ -82,6 +82,9 @@ a {
   text-decoration-thickness: 3px;
   text-decoration-color: #a33125;
 }
+.otras-paginas-relacionadas {
+  margin-bottom: 1rem;
+}
 .hoverIn {
   background-color: #ffb47e;
   color: #fff!important;
