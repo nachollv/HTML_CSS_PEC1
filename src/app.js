@@ -17,10 +17,10 @@ elementsArr.forEach(aElement => aElement.addEventListener("mouseout", event => {
   aElement.classList.remove("hoverIn");
 }))
 
-import React from 'react';
+/* import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-/* const MyImage = ({ image }) => (
+const MyImage = ({ image }) => (
   <div>
     <LazyLoadImage
       alt={image.alt}
@@ -29,6 +29,6 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
       width={image.width} />
     <span>{image.caption}</span>
   </div>
-); */
+);
 
-export default MyImage;
+export default MyImage; */
