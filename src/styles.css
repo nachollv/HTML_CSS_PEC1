@@ -93,10 +93,11 @@ a {
   padding-right: 0.4rem;
 }
 .hoverOut {
-  background-color: #fff;
+  background-color: #f6ecc8;
   color: #000!important;
   padding-left: 0.4rem;
   padding-right: 0.4rem;
+  text-decoration-color: #000;
 }
 article.detail ol {
   list-style-type:upper-roman;
