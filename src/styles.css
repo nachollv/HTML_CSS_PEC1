@@ -75,8 +75,8 @@ h3 {
 }
 a {
   color: #fab804;
-  text-decoration-thickness: 4px;
-  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-thickness: 3px;
+  text-decoration-color: #a33125;
 }
 .hoverIn {
   background-color: #ffb47e;
@@ -115,9 +115,13 @@ dd {
 
   body {
   background: linear-gradient(to bottom, #f7f5ef, #f3eac9);
+  margin: 1rem;
   font-size: 2rem;
   }
-  article { grid-template-columns: repeat(1, 1fr);}
-  footer { grid-template-columns: repeat(1, 1fr);}
-  .relatedLinks{ grid-template-columns: repeat(1, 1fr);}
+  article { grid-template-columns: repeat(1, 1fr); }
+  article p { margin-left:0;margin-right:0;margin-bottom: 4rem; }
+  article figcaption { font-size: .5rem; margin-bottom: 3rem;  }
+  ol { padding-left: 0; padding-right: 0; }
+  footer { grid-template-columns: repeat(1, 1fr); gap: 0; padding: 1rem; }
+  .relatedLinks{ grid-template-columns: repeat(1, 1fr); }
 }
