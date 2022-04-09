@@ -9,7 +9,7 @@ La lista de contenidos del sitio:
 4. **Presentación** en esta página se explica en detalle el contenido de este sitio web. Debe incluir elementos multimedia y un mínimo de tres párrafos.
 5. **Enlaces** esta página contiene referencias a las fuentes usadas y las atribuciones de copyleft, cuando sea necesario.
 
-Enlaces de interés:
+###Enlaces de interés:
 **Fuente de las imágenes**
 1. Imagen de la portada: [Jules Verne](https://commons.wikimedia.org/w/index.php?search=Jules+Verne&title=Special:MediaSearch&type=image) 
 2. Imagen de las categorías
