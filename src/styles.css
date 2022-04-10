@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&family=Roboto:wght@300&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ body {
 }
 
 html {
-  font-family:'Arvo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Roboto Serif','Arvo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box; /* para obligar al navegador que use el modelo de cajas alternativo donde, al ancho y al alto de la caja NO hay que sumar padding, margin, border*/
 }
 
@@ -26,6 +26,7 @@ article {
   grid-template-columns: repeat(6, 1fr);
   color: #a33125;
   margin-top: 4rem;
+  font-family: Roboto;
   font-size: 1rem;
 }
 article figcaption {
@@ -67,14 +68,16 @@ footer {
 h1 {
     font-size: 4rem;
     color: #f3ab63;
-    font-family: cursive;
+    font-family: 'Roboto Serif';
   }
 h2 {
   font-size: 2rem;
+  font-family: 'Roboto Serif';
   text-shadow: 0 0 3px #c8b080, 0 0 10px #ebc286;
 }
 h3 {
   font-size: 1.5rem;
+  font-family: 'Roboto Serif';
   text-shadow: 0 0 3px #c8b080, 0 0 10px #ebc286;
   margin-bottom: 1rem;
 }
@@ -127,7 +130,7 @@ dd {
 
   body {
   background: linear-gradient(to bottom, #f7f5ef, #f3eac9);
-  margin: 1rem;
+  margin: 1.5rem;
   font-size: 2rem;
   }
   article { grid-template-columns: repeat(1, 1fr); }
