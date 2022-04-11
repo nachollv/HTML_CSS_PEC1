@@ -24,6 +24,6 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.4.2",
-    "gh": "^2.8.9",
+    "gh": "^2.8.9"
   }
 }
