@@ -142,5 +142,5 @@ dd {
   article figcaption { font-size: .5rem; margin-bottom: 3rem;  }
   ol { padding-left: 0; padding-right: 0; }
   footer { grid-template-columns: repeat(1, 1fr); gap: 0; padding: 1rem; }
-  .relatedLinks{ grid-template-columns: repeat(1, 1fr); }
+  .horizontal{ grid-template-columns: repeat(1, 1fr); }
 }
