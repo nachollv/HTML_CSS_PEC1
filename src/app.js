@@ -9,10 +9,12 @@ elementsArr.forEach(aElement => aElement.addEventListener("mouseover", event => 
   
   aElement.classList.add("hoverIn");
   aElement.classList.remove("hoverOut");
+  
 }))
 
 elementsArr.forEach(aElement => aElement.addEventListener("mouseout", event => {
   
   aElement.classList.add("hoverOut");
   aElement.classList.remove("hoverIn");
+
 }))
