@@ -26,7 +26,18 @@
     
     <div>
         <figure>
-            <img class="center responsive" src="img/From_the_Earth_to_the_Moon_Jules_Verne.jpg" title="Portada horizontal en tonos verdes del libro De la Tierra a la Luna" alt="Portada horizontal en tonos verdes del libro De la Tierra a la Luna"/>
+            <picture>
+<!--                 <source srcset="img/From_the_Earth_to_the_Moon_Jules_Verne_800_px.jpg, From_the_Earth_to_the_Moon_Jules_Verne_550_px.jpg">
+                <source srcset="From_the_Earth_to_the_Moon_Jules_Verne_417_px.jpg">
+                <img src="logo-320.png" alt="logo"> -->
+                <source media="(min-width: 1024px)" srcset="img/From_the_Earth_to_the_Moon_Jules_Verne.jpg">
+                <source media="(min-width: 800px)" srcset="img/From_the_Earth_to_the_Moon_Jules_Verne_800_px.jpg">
+                <source media="(min-width: 650px)" srcset="img/From_the_Earth_to_the_Moon_Jules_Verne_550_px.jpg">
+                <source media="(min-width: 465px)" srcset="img/From_the_Earth_to_the_Moon_Jules_Verne_417_px.jpg">
+                <img src="img/From_the_Earth_to_the_Moon_Jules_Verne_400px.png" style="width:auto;">
+
+              </picture>
+            <!-- <img class="center responsive" src="img/From_the_Earth_to_the_Moon_Jules_Verne.jpg" title="Portada horizontal en tonos verdes del libro De la Tierra a la Luna" alt="Portada horizontal en tonos verdes del libro De la Tierra a la Luna"/> -->
             <figcaption>
                 Verne, Jules. 1874. From the Earth to the Moon : direct in ninety-seven hours and twenty minutes, 
                 and a trip round it.,New York, Scribner, Armstrong. 
