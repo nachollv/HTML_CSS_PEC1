@@ -106,10 +106,12 @@ footer ul {
 footer .footer-left {
   transform: translate(-10px, 55px) rotate(20deg);
 }
+footer .footer-right {
+  transform: translateY(30px);
+}
 .footer-middle, .footer-right {
   padding-top: 1rem;
 }
-
 h1 {
     font-size: 4rem;
     color: #f3ab63;
