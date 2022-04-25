@@ -31,6 +31,10 @@ header {
 header img {
   width: 50%;
 }
+header img:hover, footer img:hover {
+  transform: rotate(-20deg);
+  cursor: pointer;
+}
 header > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
@@ -97,6 +101,9 @@ footer ul {
   list-style: none;
   line-height: 1.5rem;
   color: #000;
+}
+footer .footer-left {
+  transform: translate(-10px, 55px) rotate(20deg);
 }
 .footer-middle, .footer-right {
   padding-top: 1rem;
@@ -177,4 +184,25 @@ dd {
   ol { padding-left: 0; padding-right: 0; }
   footer { grid-template-columns: repeat(1, 1fr); gap: 0; padding: 1rem; }
   .horizontal{ grid-template-columns: repeat(1, 1fr); }
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.newsletterBanner {
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-name: zoomInOut;
+  animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
 }
