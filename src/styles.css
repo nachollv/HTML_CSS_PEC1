@@ -69,6 +69,7 @@ article p {
   margin-bottom: 4rem;
   text-align: left;
 }
+
 .horizontal{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -155,6 +156,19 @@ ol {
   list-style-position: outside;
   padding-left: 2rem;
   padding-right: 2rem;
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-top: 30%;
+    width: 150%;
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
 }
 ol li {
   background-color: #e9e2d8;
@@ -191,18 +205,26 @@ dd {
     transform: scale(0.1);
     opacity: 0;
   }
-  60% {
-    transform: scale(1.1);
-    opacity: 1;
+  25% {
+    transform: scale(0.25);
+    opacity: .25;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: .50;
+  }
+  75% {
+    transform: scale(0.75);
+    opacity: 0.75;
   }
   100% {
-    transform: scale(0.8);
+    transform: scale(1.0);
   }
 }
 
 .newsletterBanner {
   animation-duration: 2s;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
   animation-name: zoomInOut;
   animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
 }
