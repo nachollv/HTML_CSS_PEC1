@@ -10,12 +10,10 @@
   background: transparent;
 }
 body {
+/*   display: flex; 
+  flex-direction: column; */
   font-size: 10px;
-  margin: 3rem 3rem 0 3rem;
-  min-height: 80vh;
-  /* height: 100%; */
-/*   display: grid;
-  grid-template-rows: auto 1fr auto; */
+  height: 100%;
 }
 
 html {
@@ -51,9 +49,11 @@ article {
   grid-template-columns: repeat(6, 1fr);
   color: #a33125;
   margin-top: 4rem;
+  margin-bottom: 1rem;
   font-family: Roboto;
   font-size: 1rem;
   min-height: 100%;
+  
 }
 article figcaption {
   font-size: .65rem;
@@ -101,6 +101,10 @@ footer {
   font-size: 1rem;
   margin-top: 10rem;
   min-height: 2.25rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
 }
 footer img {
   width: 50%;
