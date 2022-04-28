@@ -18,7 +18,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
  background: transparent;
 }
 
-body { font-size: 10px; height: 100%; }
+body { font-size: 10px; height: 100%; margin-left: .5rem; margin-right: .5rem;}
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
@@ -68,6 +68,7 @@ article {
 article figcaption {
   font-size: .65rem;
   text-align: center;
+  margin-top: .5rem;
   margin-bottom: 5rem;
   white-space: pre-line;
 }
@@ -110,7 +111,7 @@ footer {
   color: #ffffff;
   font-size: 1rem;
   min-height: 2.25rem;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
 }
 footer img {
   width: 40%;
@@ -134,17 +135,19 @@ h1 {
     font-size: 3rem;
     color: #f3ab63;
     font-family: 'Roboto Serif';
+    margin-bottom: .5rem;
   }
 h2 {
   font-size: 2rem;
   font-family: 'Roboto Serif';
   text-shadow: 0 0 3px #c8b080, 0 0 10px #ebc286;
+  margin-bottom: .5rem;
 }
 h3 {
   font-size: 1.5rem;
   font-family: 'Roboto Serif';
   text-shadow: 0 0 3px #c8b080, 0 0 10px #ebc286;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   margin-left: 1.5rem;
 }
 a {
@@ -208,7 +211,7 @@ dd {
  @media only screen and (max-width: 800px) {
 
   body { background: linear-gradient(90deg, #f3a961 0%, #f9edcb 35%, #bfd1d9 100%); margin: 0; font-size: 20px; }
-  h1 { font-size: 2rem; }
+  h1 { font-size: 2rem; white-space: pre-line; }
   h3 { text-align: left; margin-left: 0.5rem; font-size: 1rem;}
   header { grid-template-columns: repeat(1, 1fr); }
   header div { padding: 0; }
@@ -239,7 +242,6 @@ dd {
     transform: scale(1.0);
   }
 }
-
 .newsletterBanner {
   animation:  zoomInOut 2s ease-in-out 3s 2;
   margin-left: .5rem;
