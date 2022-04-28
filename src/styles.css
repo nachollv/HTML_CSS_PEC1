@@ -57,6 +57,9 @@ color: #a33125;
 text-decoration-thickness: 3px;
 text-decoration-color: #a33125;
 }
+figure {
+  margin: 0;
+}
 header {
   display: grid; 
   grid-template-columns: 20% 80%;
