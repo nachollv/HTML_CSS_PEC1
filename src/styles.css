@@ -18,18 +18,13 @@ table, caption, tbody, tfoot, thead, tr, th, td {
  background: transparent;
 }
 
-body { line-height: 1; }
+body { font-size: 10px; height: 100%; }
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
 q:before, q:after {
  content: '';
  content: none;
-}
-
-body {
-  font-size: 10px;
-  height: 100%;
 }
 
 html {
@@ -212,23 +207,20 @@ dd {
 
  @media only screen and (max-width: 800px) {
 
-  body {
-  background: linear-gradient(to bottom, #f7f5ef, #f3eac9);
-  margin: 0;
-  font-size: 2rem;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  h3 {
-    text-align: left;
-  }
-  article { grid-template-columns:repeat(1, 1fr); }
-  article p { margin-left:0.5rem; margin-right:0.5rem; margin-bottom:4rem; }
-  article figcaption { font-size: .5rem; margin-bottom: 3rem;  }
-  ol { padding-left: 0; padding-right: 0; }
-  footer { margin-top:1rem; grid-template-columns: repeat(1, 1fr); gap: 0; padding: 2rem; }
+  body { background: linear-gradient(90deg, #f3a961 0%, #f9edcb 35%, #bfd1d9 100%); margin: 0; font-size: 20px; }
+  h1 { font-size: 2rem; }
+  h3 { text-align: left; margin-left: 0.5rem; font-size: 1rem;}
+  header { grid-template-columns: repeat(1, 1fr); }
+  header div { padding: 0; }
+  header h1 { text-align: center; }
+  article { grid-template-columns:repeat(1, 1fr); margin-top: 1rem;}
+  article p { margin-left:0.5rem; margin-right:0.5rem; margin-bottom:2rem; }
+  article figcaption { font-size: .75rem; margin-bottom: 3rem;  }
+  ol { padding-left: 0; padding-right: 0; max-width: 100%; white-space: pre-line;}
+  #otras-paginas-relacionadas { grid-column: 1 / span 1; white-space: pre-line; }
+  footer { margin-top:1rem; grid-template-columns: repeat(1, 1fr); gap: 0; padding: 2rem; border: 0 none;}
   footer ul { padding-left: 0;}
+  .footer-right { transform: translateY( 1rem ); text-align: center; margin-bottom: 1rem;}
   .horizontal{ grid-template-columns: repeat(1, 1fr); }
 }
 
@@ -250,4 +242,5 @@ dd {
 
 .newsletterBanner {
   animation:  zoomInOut 2s ease-in-out 3s 2;
+  margin-left: .5rem;
 }
