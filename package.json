@@ -1,7 +1,7 @@
 {
   "name": "biografia_julio_verne",
   "version": "1.0.0",
-  "description": "PEC1. un pequeño portal biográfico",
+  "description": "PEC2. un pequeño portal biográfico",
   "source": "src/index.html",
   "devDependencies": {
     "npm-run-all": "^4.1.5",
