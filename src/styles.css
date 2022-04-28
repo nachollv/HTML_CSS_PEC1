@@ -63,7 +63,7 @@ header {
   text-align: left;
 }
 header img {
-  width: 30%;
+  width: 25%;
 }
 header img:hover, footer img:hover {
   transform: rotate(-20deg) scale(1.25, 1.25);
@@ -72,13 +72,13 @@ header img:hover, footer img:hover {
 header > div {
   text-align: center;
   padding: 20px 0;
-  font-size: 30px;
+
 }
 article { 
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   color: #a33125;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
   margin-bottom: 1rem;
   font-family: Roboto;
   font-size: 1rem;
@@ -237,5 +237,6 @@ dd {
 }
 .newsletterBanner {
   animation:  zoomInOut 2s ease-in-out 3s 2;
-  margin-left: .5rem;
+  margin-left: 0;
+  white-space: pre-line;
 }
