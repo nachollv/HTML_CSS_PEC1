@@ -18,8 +18,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
  background: transparent;
 }
 
-body { font-size: 10px; height: 100%; margin-left: .5rem; margin-right: .5rem; 
-  background: linear-gradient(90deg, #f3a961 0%, #f9edcb 45%, #bfd1d9 100%);}
+body { font-size: 10px; height: 100%; margin: 0 auto; 
+  background: linear-gradient(90deg, #f3a961 0%, #f9edcb 45%, #bfd1d9 100%);
+max-width: 1600px; }
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
