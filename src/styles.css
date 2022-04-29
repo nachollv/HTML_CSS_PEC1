@@ -83,8 +83,6 @@ article {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   color: #a33125;
-  /* margin-top: 4rem; */
- /*  margin-bottom: 1rem; */
   font-family: Roboto;
   font-size: 1rem;
   min-height: 100%;
@@ -114,6 +112,7 @@ article p {
 }
 #otras-paginas-relacionadas{
   grid-column: 1 / span 6;
+  margin: 5px;
 }
 .img_full_column {
   display: block;
@@ -151,9 +150,6 @@ footer ul {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.otras-paginas-relacionadas {
-  margin-bottom: 1rem;
-}
 .hoverIn {
   background-color: #ffb47e;
   color: #fff!important;
@@ -175,11 +171,10 @@ ol {
   list-style-position: outside;
   padding-left: 2rem;
   padding-right: 2rem;
+  margin: 5px;
   animation-duration: 2s;
   animation-name: slidein;
-
-    list-style-type:upper-roman;
-
+  list-style-type:upper-roman;
 }
 @keyframes slidein {
   from {
@@ -209,7 +204,7 @@ dd {
 @media only screen and (max-width: 1024px) {
 
   article { grid-template-columns:repeat(4, 1fr); margin-top: 1rem;}
-  #otras-paginas-relacionadas { grid-column: 1 / span 4; white-space: pre-line; margin-bottom: 1rem; }
+  #otras-paginas-relacionadas { grid-column: 1 / span 4; white-space: pre-line; }
 
 }
 
@@ -224,10 +219,10 @@ dd {
   article { grid-template-columns:repeat(1, 1fr); margin-top: 1rem;}
   article p { margin-left:0.5rem; margin-right:0.5rem; margin-bottom:2rem; }
   article figcaption { font-size: .75rem; margin-bottom: 1rem; }
-  ol { padding-left: 0; padding-right: 0; max-width: 100%; white-space: pre-line;}
+  ol { padding-left: 0; padding-right: 0; max-width: 100%; white-space: pre-line; }
   #otras-paginas-relacionadas { grid-column: 1 / span 1; white-space: pre-line; }
-  footer { margin-top:1rem; grid-template-columns: repeat(1, 1fr); gap: 0; padding: 2rem; border: 0 none;}
-  footer ul { padding-left: 0;}
+  footer { margin-top:1rem; grid-template-columns: repeat(1, 1fr); gap: 0; padding: 2rem; border: 0 none; }
+  footer ul { padding-left: 0; }
   .footer-left { transform: translate(0,10px); }
   .footer-right { transform: translateY( 1rem ); text-align: center; margin-bottom: 1rem;}
   .horizontal{ grid-template-columns: repeat(1, 1fr); }
