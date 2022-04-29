@@ -106,8 +106,9 @@ article p {
   text-align: left;
 }
 .images{
+  max-width: 511px;
   width: 100%;
-  height: auto;
+  text-align: center;
 }
 #otras-paginas-relacionadas{
   grid-column: 1 / span 6;
@@ -165,6 +166,7 @@ footer ul {
 }
 figure {
   margin: 0;
+  text-align: center;
 }
 ol {
   list-style-position: outside;
