@@ -262,5 +262,5 @@ dd {
 }
 .newsletterBanner:hover{
   opacity: 1;
-  transform: scale(.9);
+  cursor: pointer;
 }
