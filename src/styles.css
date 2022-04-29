@@ -168,9 +168,9 @@ footer ul {
   padding-right: 0.4rem;
   text-decoration-color: #000;
 }
-/* .detail ol {
-  list-style-type:upper-roman;
-} */
+figure {
+  margin: 0;
+}
 ol {
   list-style-position: outside;
   padding-left: 2rem;
