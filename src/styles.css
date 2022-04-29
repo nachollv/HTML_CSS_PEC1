@@ -18,7 +18,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
  background: transparent;
 }
 
-body { font-size: 10px; height: 100%; margin-left: .5rem; margin-right: .5rem; background: linear-gradient(90deg, #f3a961 0%, #f9edcb 35%, #bfd1d9 100%);}
+body { font-size: 10px; height: 100%; margin-left: .5rem; margin-right: .5rem; 
+  background: linear-gradient(90deg, #f3a961 0%, #f9edcb 35%, #bfd1d9 100%);}
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
@@ -83,7 +84,7 @@ article {
   grid-template-columns: repeat(6, 1fr);
   color: #a33125;
   /* margin-top: 4rem; */
-  margin-bottom: 1rem;
+ /*  margin-bottom: 1rem; */
   font-family: Roboto;
   font-size: 1rem;
   min-height: 100%;
@@ -96,7 +97,6 @@ article figcaption {
   white-space: pre-line;
 }
 .clip-path-jules-verne {
- 
  clip-path: circle(50%);
 }
 .clip-path-jules-verne:hover {
@@ -168,15 +168,18 @@ footer ul {
   padding-right: 0.4rem;
   text-decoration-color: #000;
 }
-article.detail ol {
+/* .detail ol {
   list-style-type:upper-roman;
-}
+} */
 ol {
   list-style-position: outside;
   padding-left: 2rem;
   padding-right: 2rem;
   animation-duration: 2s;
   animation-name: slidein;
+
+    list-style-type:upper-roman;
+
 }
 @keyframes slidein {
   from {
@@ -203,10 +206,16 @@ dt {
 dd {
   margin-left: 2em;
 }
+@media only screen and (max-width: 1024px) {
 
- @media only screen and (max-width: 760px) {
+  article { grid-template-columns:repeat(4, 1fr); margin-top: 1rem;}
+  #otras-paginas-relacionadas { grid-column: 1 / span 4; white-space: pre-line; margin-bottom: 1rem; }
 
-  body { background: linear-gradient(90deg, #f3a961 0%, #f9edcb 35%, #bfd1d9 100%); margin: 0; font-size: 20px; }
+}
+
+@media only screen and (max-width: 800px) {
+
+  body { margin: 0; font-size: 20px; }
   h1 { font-size: 2rem; white-space: pre-line; }
   h3 { text-align: left; margin-left: 0.5rem; font-size: 1rem;}
   header { grid-template-columns: repeat(1, 1fr); }
@@ -222,6 +231,7 @@ dd {
   .footer-left { transform: translate(0,10px); }
   .footer-right { transform: translateY( 1rem ); text-align: center; margin-bottom: 1rem;}
   .horizontal{ grid-template-columns: repeat(1, 1fr); }
+
 }
 
 @keyframes zoomInOut {
