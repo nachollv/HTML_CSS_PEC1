@@ -20,7 +20,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 body { font-size: 10px; height: 100%; margin: 0 auto; 
   background: linear-gradient(90deg, #f3a961 0%, #f9edcb 45%, #bfd1d9 100%);
-max-width: 1600px; }
+max-width: 1890px; }
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
@@ -139,11 +139,10 @@ footer {
 footer img {
   width: 15%;
 }
-footer ul {
-  padding-left: 3rem;
-  list-style: none;
-  line-height: 1.5rem;
-  color: rgb(70, 104, 104);
+footer li {
+background-color: #c0be9e;
+border: none;
+padding: 0;
 }
 .footer-left {
   transform: translate(23px, 23px) rotate(0deg);
@@ -170,14 +169,19 @@ figure {
   margin: 0;
   text-align: center;
 }
-ol {
+ol, ul {
   list-style-position: outside;
   padding-left: 2rem;
   padding-right: 2rem;
   margin: 5px;
   animation-duration: 2s;
   animation-name: slidein;
+}
+ol {
   list-style-type:upper-roman;
+}
+.ul-footer{
+  background: none;
 }
 @keyframes slidein {
   from {
@@ -190,9 +194,9 @@ ol {
     width: 100%;
   }
 }
-ol li {
+li {
   background-color: #e9e2d8;
-  color: black;
+  
   padding: 1rem;
   margin-bottom: 1rem;
   border: #a33125 1px solid;
@@ -249,7 +253,12 @@ dd {
   }
 }
 .newsletterBanner {
-  animation:  zoomInOut 2s ease-in-out 3s 2;
+  animation: zoomInOut 1s ease-in-out 1s 2 alternate-reverse;
   margin-left: 0;
   white-space: pre-line;
+  opacity: .9;
+}
+.newsletterBanner:hover{
+  opacity: 1;
+  transform: scale(.9);
 }
