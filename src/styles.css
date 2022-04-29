@@ -19,7 +19,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 body { font-size: 10px; height: 100%; margin-left: .5rem; margin-right: .5rem; 
-  background: linear-gradient(90deg, #f3a961 0%, #f9edcb 35%, #bfd1d9 100%);}
+  background: linear-gradient(90deg, #f3a961 0%, #f9edcb 45%, #bfd1d9 100%);}
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
@@ -77,7 +77,6 @@ header img:hover, footer img:hover {
 header > div {
   text-align: center;
   padding: 20px 0;
-
 }
 article { 
   display: grid;
@@ -204,7 +203,8 @@ dd {
 @media only screen and (max-width: 1024px) {
 
   article { grid-template-columns:repeat(4, 1fr); margin-top: 1rem;}
-  #otras-paginas-relacionadas { grid-column: 1 / span 4; white-space: pre-line; }
+  #otras-paginas-relacionadas { grid-column: 1 / span 3; white-space: pre-line; }
+  .horizontal{ grid-template-columns: repeat(3, 1fr); }
 
 }
 

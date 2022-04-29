@@ -1,5 +1,5 @@
 const name = "Herramientas HTML y CSS";
-console.log(`Bienvenido a la PEC 1 de ${name}`);
+console.log(`Bienvenido a la PEC 2 de ${name}`);
 
 
 const elementList = document.querySelectorAll ("a");
