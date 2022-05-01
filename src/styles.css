@@ -17,10 +17,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
  vertical-align: baseline;
  background: transparent;
 }
-
 body { font-size: 10px; height: 100%; margin: 0 auto; 
   background: linear-gradient(90deg, #f3a961 0%, #f9edcb 45%, #bfd1d9 100%);
-max-width: 1890px; }
+  max-width: 1890px; }
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
@@ -40,23 +39,23 @@ h1 {
   margin-bottom: .5rem;
 }
 h2 {
-font-size: 2rem;
-font-family: 'Roboto Serif';
-text-shadow: 0 0 3px #c8b080, 0 0 10px #ebc286;
-margin-bottom: .5rem;
-margin-left: 1rem;
+  font-size: 2rem;
+  font-family: 'Roboto Serif';
+  text-shadow: 0 0 3px #c8b080, 0 0 10px #ebc286;
+  margin-bottom: .5rem;
+  margin-left: 1rem;
 }
 h3 {
-font-size: 1.5rem;
-font-family: 'Roboto Serif';
-text-shadow: 0 0 3px #c8b080, 0 0 10px #ebc286;
-margin-bottom: .5rem;
-margin-left: 1.5rem;
+  font-size: 1.5rem;
+  font-family: 'Roboto Serif';
+  text-shadow: 0 0 3px #c8b080, 0 0 10px #ebc286;
+  margin-bottom: .5rem;
+  margin-left: 1.5rem;
 }
 a {
-color: #a33125;
-text-decoration-thickness: 3px;
-text-decoration-color: #a33125;
+  color: #a33125;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #a33125;
 }
 img {
   margin: 0;
@@ -95,15 +94,13 @@ article figcaption {
   white-space: pre-line;
 }
 .clip-path-jules-verne {
- clip-path: circle(50%);
+  -webkit-clip-path: inset(0% 0% 0% 0%); 
+  clip-path: inset(0% 0% 0% 0%);  
 }
 .clip-path-jules-verne:hover {
-
-
-  -webkit-clip-path: inset(5% 20% 15% 10%); 
-  clip-path: inset(5% 20% 15% 10%);
-
+  clip-path: circle(50%);
 }
+
 article p {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -212,12 +209,17 @@ dt {
 dd {
   margin-left: 2em;
 }
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 1224px) {
 
   article { grid-template-columns:repeat(4, 1fr); margin-top: 1rem;}
   #otras-paginas-relacionadas { grid-column: 1 / span 3; }
-  .horizontal{ grid-template-columns: repeat(3, 1fr); }
+  
 
+}
+@media only screen and (max-width: 1024px) {
+  article { grid-template-columns:repeat(2, 1fr); margin-top: 1rem;}
+  .horizontal{ grid-template-columns: repeat(2, 1fr); }
 }
 
 @media only screen and (max-width: 800px) {
