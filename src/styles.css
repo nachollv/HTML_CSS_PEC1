@@ -123,10 +123,15 @@ article p {
   height: auto;
   text-align: center;
 }
-.horizontal {
+.relatedlinks {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.cabecera { grid-area: cabecera; }
+.texto { grid-area: texto; }
+.gunclub { grid-area: gunclub; }
+.columbiad { grid-area: columbiad; }
+.capitulos { grid-area: capitulos; }
 footer { 
   display: grid;
   grid-template-columns: 30% 35% 35%;
@@ -219,7 +224,7 @@ dd {
 }
 @media only screen and (max-width: 1024px) {
   article { grid-template-columns:repeat(2, 1fr); margin-top: 1rem;}
-  .horizontal{ grid-template-columns: repeat(2, 1fr); }
+  .relatedlinks{ grid-template-columns: repeat(2, 1fr); }
 }
 
 @media only screen and (max-width: 800px) {
@@ -239,7 +244,7 @@ dd {
   footer ul { padding-left: 0; }
   .footer-left { transform: translate(0,10px); }
   .footer-right { transform: translateY( 1rem ); text-align: center; margin-bottom: 1rem;}
-  .horizontal{ grid-template-columns: repeat(1, 1fr); }
+  .relatedlinks{ grid-template-columns: repeat(1, 1fr); }
 
 }
 
