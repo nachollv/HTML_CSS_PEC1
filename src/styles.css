@@ -124,7 +124,7 @@ article p {
 }
 .horizontal {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template: 'cabecera texto' 'capitulos capitulos';
 }
 .texto {
   grid-area: texto;
@@ -220,12 +220,12 @@ dd {
 
 @media only screen and (max-width: 1280px) {
   article { grid-template-columns:repeat(4, 1fr); margin-top: 1rem; }
-  .horizontal{ grid-template-columns: repeat(2, 1fr); }
-  #otras-paginas-relacionadas { grid-column: 1 / span 3; }
+ 
 }
 @media only screen and (max-width: 960px) {
   header h1 { font-size: 2rem; }
   article { grid-template-columns:repeat(2, 1fr); margin-top: 1rem;}
+  .horizontal { grid-template: 'cabecera' 'texto' 'capitulos'; }
 }
 @media only screen and (max-width: 640px) {
   body { margin: 0; font-size: 20px; }
