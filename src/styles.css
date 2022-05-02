@@ -100,14 +100,13 @@ article figcaption {
 .clip-path-jules-verne:hover {
   clip-path: circle(50%);
 }
-
 article p {
   margin-left: 2rem;
   margin-right: 2rem;
   margin-bottom: 4rem;
   text-align: left;
 }
-.images{
+.gun-club-511{
   max-width: 511px;
   width: 100%;
   text-align: center;
@@ -125,7 +124,16 @@ article p {
 }
 .relatedlinks {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template: 'cabecera texto' 'capitulos capitulos';
+}
+.texto {
+  grid-area: texto;
+}
+.img-cabecera {
+  grid-area: cabecera;
+}
+.capitulos {
+  grid-area: capitulos;
 }
 .cabecera { grid-area: cabecera; }
 .texto { grid-area: texto; }
@@ -215,20 +223,20 @@ dd {
   margin-left: 2em;
 }
 
-@media only screen and (max-width: 1224px) {
-
-  article { grid-template-columns:repeat(4, 1fr); margin-top: 1rem;}
-  #otras-paginas-relacionadas { grid-column: 1 / span 3; }
-  
-
+@media only screen and (max-width: 1280px) {
+  article { grid-template-columns:repeat(4, 1fr); margin-top: 1rem; }
+ 
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 960px) {
+  header h1 { font-size: 2rem; }
   article { grid-template-columns:repeat(2, 1fr); margin-top: 1rem;}
+<<<<<<< HEAD
   .relatedlinks{ grid-template-columns: repeat(2, 1fr); }
+=======
+  .horizontal { grid-template: 'cabecera' 'texto' 'capitulos'; }
+>>>>>>> 4f0598d2ebd9203a8435b764deb2c99d4144203b
 }
-
-@media only screen and (max-width: 800px) {
-
+@media only screen and (max-width: 640px) {
   body { margin: 0; font-size: 20px; }
   h1 { font-size: 2rem; white-space: pre-line; }
   h3 { text-align: left; margin-left: 0.5rem; font-size: 1rem;}
@@ -242,10 +250,14 @@ dd {
   #otras-paginas-relacionadas { grid-column: 1 / span 1; }
   footer { margin-top:1rem; grid-template-columns: repeat(1, 1fr); gap: 0; padding: 2rem; border: 0 none; }
   footer ul { padding-left: 0; }
-  .footer-left { transform: translate(0,10px); }
+  .footer-left { transform: translate(5px,10px); }
   .footer-right { transform: translateY( 1rem ); text-align: center; margin-bottom: 1rem;}
+<<<<<<< HEAD
   .relatedlinks{ grid-template-columns: repeat(1, 1fr); }
 
+=======
+  .horizontal{ grid-template: 'cabecera' 'texto' 'capitulos'; } 
+>>>>>>> 4f0598d2ebd9203a8435b764deb2c99d4144203b
 }
 
 @keyframes zoomInOut {
