@@ -235,7 +235,7 @@ dd {
   article p { margin-left:0.5rem; margin-right:0.5rem; margin-bottom:2rem; }
   article figcaption { font-size: .75rem; margin-bottom: 1rem; }
   ul { padding-left: 1rem; padding-right: 1rem; }
-  ol { white-space:normal; }
+  ol { white-space:normal; margin-left: 2rem; }
   #otras-paginas-relacionadas { grid-column: 1 / span 1; }
   footer { margin-top:1rem; grid-template-columns: repeat(1, 1fr); gap: 0; padding: 2rem; border: 0 none; }
   footer ul { padding-left: 0; }
