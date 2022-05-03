@@ -180,7 +180,6 @@ ol, ul {
   list-style-position: outside;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin: 5px;
   animation-duration: 2s;
   animation-name: slidein;
 }
@@ -217,12 +216,13 @@ dd {
 
 @media only screen and (max-width: 1280px) {
   article { grid-template-columns:repeat(2, 1fr); margin-top: 1rem; }
- 
+  ol, ul { padding-left: 2rem; padding-right: 2rem; }
 }
 @media only screen and (max-width: 960px) {
   header h1 { font-size: 2rem; }
   article { grid-template-columns:repeat(1, 1fr); margin-top: 1rem;}
   .horizontal { grid-template: 'cabecera' 'texto' 'capitulos'; }
+  ol, ul { padding-left: 1.5rem; padding-right: 1.5rem; }
 }
 @media only screen and (max-width: 640px) {
   body { margin: 0; font-size: 20px; }
@@ -234,7 +234,8 @@ dd {
   article { grid-template-columns:repeat(1, 1fr); margin-top: 1rem;}
   article p { margin-left:0.5rem; margin-right:0.5rem; margin-bottom:2rem; }
   article figcaption { font-size: .75rem; margin-bottom: 1rem; }
-  ol { padding-left: 0; padding-right: 0; max-width: 100%; white-space: pre-line; }
+  ul { padding-left: 1rem; padding-right: 1rem; }
+  ol { white-space:normal; }
   #otras-paginas-relacionadas { grid-column: 1 / span 1; }
   footer { margin-top:1rem; grid-template-columns: repeat(1, 1fr); gap: 0; padding: 2rem; border: 0 none; }
   footer ul { padding-left: 0; }
