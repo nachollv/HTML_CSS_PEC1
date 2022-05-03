@@ -122,7 +122,7 @@ article p {
   height: auto;
   text-align: center;
 }
-.relatedlinks {
+.horizontal {
   display: grid;
   grid-template: 'cabecera texto' 'capitulos capitulos';
 }
@@ -135,11 +135,6 @@ article p {
 .capitulos {
   grid-area: capitulos;
 }
-.cabecera { grid-area: cabecera; }
-.texto { grid-area: texto; }
-.gunclub { grid-area: gunclub; }
-.columbiad { grid-area: columbiad; }
-.capitulos { grid-area: capitulos; }
 footer { 
   display: grid;
   grid-template-columns: 30% 35% 35%;
@@ -230,11 +225,7 @@ dd {
 @media only screen and (max-width: 960px) {
   header h1 { font-size: 2rem; }
   article { grid-template-columns:repeat(2, 1fr); margin-top: 1rem;}
-<<<<<<< HEAD
-  .relatedlinks{ grid-template-columns: repeat(2, 1fr); }
-=======
   .horizontal { grid-template: 'cabecera' 'texto' 'capitulos'; }
->>>>>>> 4f0598d2ebd9203a8435b764deb2c99d4144203b
 }
 @media only screen and (max-width: 640px) {
   body { margin: 0; font-size: 20px; }
@@ -252,12 +243,7 @@ dd {
   footer ul { padding-left: 0; }
   .footer-left { transform: translate(5px,10px); }
   .footer-right { transform: translateY( 1rem ); text-align: center; margin-bottom: 1rem;}
-<<<<<<< HEAD
-  .relatedlinks{ grid-template-columns: repeat(1, 1fr); }
-
-=======
   .horizontal{ grid-template: 'cabecera' 'texto' 'capitulos'; } 
->>>>>>> 4f0598d2ebd9203a8435b764deb2c99d4144203b
 }
 
 @keyframes zoomInOut {
