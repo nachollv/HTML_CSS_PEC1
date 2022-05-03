@@ -8,7 +8,7 @@
     "parcel": "^2.4.1",
     "rimraf": "^3.0.2"
   },
-  "browserslist": "Edge 16",
+  "browserslist": ["since 2012"],
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
