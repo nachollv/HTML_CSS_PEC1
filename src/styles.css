@@ -80,7 +80,7 @@ header > div {
 }
 article { 
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   color: #a33125;
   font-family: Roboto;
   font-size: 1rem;
@@ -90,11 +90,10 @@ article figcaption {
   font-size: .65rem;
   text-align: center;
   margin-top: .5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   white-space: pre-line;
 }
 .clip-path-jules-verne {
-  -webkit-clip-path: inset(0% 0% 0% 0%); 
   clip-path: inset(0% 0% 0% 0%);  
 }
 .clip-path-jules-verne:hover {
@@ -113,7 +112,6 @@ article p {
 }
 #otras-paginas-relacionadas{
   white-space: pre-line;
-  grid-column: 1 / span 6;
   margin: 5px;
 }
 .img_full_column {
@@ -205,7 +203,6 @@ ol {
 }
 li {
   background-color: #e9e2d8;
-  
   padding: 1rem;
   margin-bottom: 1rem;
   border: #a33125 1px solid;
@@ -219,12 +216,12 @@ dd {
 }
 
 @media only screen and (max-width: 1280px) {
-  article { grid-template-columns:repeat(4, 1fr); margin-top: 1rem; }
+  article { grid-template-columns:repeat(2, 1fr); margin-top: 1rem; }
  
 }
 @media only screen and (max-width: 960px) {
   header h1 { font-size: 2rem; }
-  article { grid-template-columns:repeat(2, 1fr); margin-top: 1rem;}
+  article { grid-template-columns:repeat(1, 1fr); margin-top: 1rem;}
   .horizontal { grid-template: 'cabecera' 'texto' 'capitulos'; }
 }
 @media only screen and (max-width: 640px) {
@@ -245,7 +242,6 @@ dd {
   .footer-right { transform: translateY( 1rem ); text-align: center; margin-bottom: 1rem;}
   .horizontal{ grid-template: 'cabecera' 'texto' 'capitulos'; } 
 }
-
 @keyframes zoomInOut {
   0% {
     transform: scale(0.1);
