@@ -8,7 +8,7 @@
     "parcel": "^2.4.1",
     "rimraf": "^3.0.2"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "browserslist": ["since 2012"],
   "scripts": {
     "start": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
@@ -23,7 +23,8 @@
   "author": "Ignacio Lladó Vidal",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^10.4.4",
-    "gh": "^1.17.5"
+    "autoprefixer": "^10.4.7",
+    "gh": "^1.17.5",
+    "postcss-cli": "^9.1.0"
   }
 }
