@@ -19,7 +19,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 body { font-size: 10px; height: 100%; margin: 0 auto; 
   background: linear-gradient(90deg, #f3a961 0%, #f9edcb 45%, #bfd1d9 100%);
-  max-width: 1890px; }
+  max-width: 1890px; color: #000;}
 ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
@@ -34,7 +34,7 @@ html {
 }
 h1 {
   font-size: 3rem;
-  color: #f3ab63;
+  color: #884604;
   font-family: 'Roboto Serif';
   margin-bottom: .5rem;
 }
@@ -104,6 +104,7 @@ article p {
   margin-right: 2rem;
   margin-bottom: 4rem;
   text-align: left;
+  color: #000;
 }
 .gun-club-511{
   max-width: 511px;
