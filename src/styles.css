@@ -17,7 +17,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
  vertical-align: baseline;
  background: transparent;
 }
-body { font-size: 10px; height: 100%; margin: 0 auto; 
+body { font-size: 10px; height: 100%; margin: auto; 
   background: linear-gradient(90deg, #f3a961 0%, #f9edcb 45%, #bfd1d9 100%);
   max-width: 1890px; }
 ol, ul { list-style: none; }
@@ -80,7 +80,7 @@ header > div {
 }
 article { 
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   color: #a33125;
   font-family: Roboto;
   font-size: 1rem;
@@ -126,20 +126,13 @@ article p {
   display: grid;
   grid-template: 'cabecera texto' 'capitulos capitulos';
 }
-.texto {
-  grid-area: texto;
-}
-.img-cabecera {
-  grid-area: cabecera;
-}
-.capitulos {
-  grid-area: capitulos;
-}
+.images { max-width: 511px; text-align: center; }
 .cabecera { grid-area: cabecera; }
 .texto { grid-area: texto; }
-.gunclub { grid-area: gunclub; }
-.columbiad { grid-area: columbiad; }
 .capitulos { grid-area: capitulos; }
+.gunclub { grid-area: gunclub;}
+.columbiad { grid-area: columbiad; }
+.horizontal { grid-template: 'cabecera texto capitulos'; }
 footer { 
   display: grid;
   grid-template-columns: 30% 35% 35%;
@@ -230,11 +223,8 @@ dd {
 @media only screen and (max-width: 960px) {
   header h1 { font-size: 2rem; }
   article { grid-template-columns:repeat(2, 1fr); margin-top: 1rem;}
-<<<<<<< HEAD
   .relatedlinks{ grid-template-columns: repeat(2, 1fr); }
-=======
   .horizontal { grid-template: 'cabecera' 'texto' 'capitulos'; }
->>>>>>> 4f0598d2ebd9203a8435b764deb2c99d4144203b
 }
 @media only screen and (max-width: 640px) {
   body { margin: 0; font-size: 20px; }
@@ -252,12 +242,8 @@ dd {
   footer ul { padding-left: 0; }
   .footer-left { transform: translate(5px,10px); }
   .footer-right { transform: translateY( 1rem ); text-align: center; margin-bottom: 1rem;}
-<<<<<<< HEAD
   .relatedlinks{ grid-template-columns: repeat(1, 1fr); }
-
-=======
   .horizontal{ grid-template: 'cabecera' 'texto' 'capitulos'; } 
->>>>>>> 4f0598d2ebd9203a8435b764deb2c99d4144203b
 }
 
 @keyframes zoomInOut {
