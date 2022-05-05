@@ -34,7 +34,7 @@ html {
 }
 h1 {
   font-size: 3rem;
-  color: #884604;
+  /* color: #884604; */
   font-family: 'Roboto Serif';
   margin-bottom: .5rem;
 }
@@ -81,7 +81,7 @@ header > div {
 article { 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  color: #a33125;
+  /* color: #a33125; */
   font-family: Roboto;
   font-size: 1rem;
   min-height: 100%;
@@ -104,7 +104,7 @@ article p {
   margin-right: 2rem;
   margin-bottom: 4rem;
   text-align: left;
-  color: #000;
+  /* color: #000; */
 }
 .gun-club-511{
   max-width: 511px;
