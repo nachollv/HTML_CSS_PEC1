@@ -18,3 +18,6 @@ elementsArr.forEach(aElement => aElement.addEventListener("mouseout", event => {
   aElement.classList.remove("hoverIn");
 
 }))
+
+
+alert ("Bienvenido a la PEC 3 de la asignatura de HTML y CSS")
