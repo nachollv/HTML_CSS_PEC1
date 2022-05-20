@@ -20,5 +20,5 @@ elementsArr.forEach(aElement => aElement.addEventListener("mouseout", event => {
 }))
 
 
-console.log("Ha finalizado la carga de la página.");
+console.log("Estoy en el final del script.");
 console.timeEnd("t1");
