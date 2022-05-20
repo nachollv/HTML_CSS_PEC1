@@ -1,5 +1,5 @@
 const name = "Herramientas HTML y CSS";
-console.log(`Bienvenido a la PEC 2 de ${name}`);
+console.log(`Bienvenido a la PEC 3 de ${name}`);
 
 
 const elementList = document.querySelectorAll ("a");
@@ -20,4 +20,4 @@ elementsArr.forEach(aElement => aElement.addEventListener("mouseout", event => {
 }))
 
 
-alert ("Bienvenido a la PEC 3 de la asignatura de HTML y CSS")
+console.log("Ha finalizado la carga de la página.")
