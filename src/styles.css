@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&family=Roboto:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&family=Roboto:wght@300&display=swap'); */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -18,18 +18,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
  background: transparent;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 body { font-size: 10px; height: 100%; margin: auto; 
   background: linear-gradient(90deg, #f3a961 0%, #f9edcb 45%, #bfd1d9 100%);
   max-width: 1890px; color: #000;}
@@ -40,79 +28,6 @@ q:before, q:after {
  content: '';
  content: none;
 }
-
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-/* lorem ipsum */
-
-
-
-
-
-
 
 html {
   height: 100%;
