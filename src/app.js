@@ -23,4 +23,4 @@ elementsArr.forEach(aElement => aElement.addEventListener("mouseout", event => {
 console.log("Estoy en el final del script.");
 console.timeEnd("t1");
 
-//document.querySelector("#main-css").removeAttribute('disabled');
+document.querySelector("#main-css").removeAttribute('disabled');
