@@ -31,7 +31,7 @@ q:before, q:after {
 
 html {
   height: 100%;
-  font-family: 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Roboto, 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box; 
 }
 h1 {
@@ -82,7 +82,7 @@ header > div {
 article { 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  font-family: Tahoma;
+  font-family: Roboto;
   font-size: 1rem;
   min-height: 100%;
 }
